@@ -37,19 +37,19 @@
 
         <!-- Username -->
         <label class="text-sm font-medium">Username</label>
-        <input type="text" placeholder="Enter Username" class="input input-bordered w-full mt-1" />
+        <input id="username" type="text" placeholder="Enter Username" class="input input-bordered w-full mt-1" />
         <p class="text-xs text-[#4A00FF] mb-3">
             Default: admin
         </p>
 
         <!-- Password -->
         <label class="text-sm font-medium">Password</label>
-        <input type="password" placeholder="Enter Password" class="input input-bordered w-full mt-1" />
+        <input id="password" type="password" placeholder="Enter Password" class="input input-bordered w-full mt-1" />
         <p class="text-xs text-[#4A00FF] mb-4">
             Default: admin123
         </p>
 
-        <button class=" w-full btn btn-primary">
+        <button onclick="login()" class=" w-full btn btn-primary ">
             Sign In
         </button>
 
@@ -63,8 +63,6 @@
             <p class="text-gray-500 mb-1">Demo:</p>
             <p>Username: admin</p>
             <p>Password: admin123</p>
-
-        </div>
 
         </div>
 
