@@ -76,12 +76,45 @@
 
 - Implement Search Functionality and 8 meaningful github commit.  
 
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
+  ###Question and Answer :
+
     - 1️⃣ What is the difference between var, let, and const?
+
+    ans:
+    var: It is the old way of declaring variables. It is function-scoped, which means it can be accessed inside the whole function even if it is declared inside a block. Because of this, it can sometimes create confusion in larger programs.
+
+    let: It is a newer way to declare variables. It is block-scoped, which means it only works inside the block { } where it is declared. It is safer and more predictable than var.
+
+    const: It is the also block-scoped like let, but it value cannot be reassigned after it is declared. It is usually used for values that should stay constant.
+
+
     - 2️⃣ What is the spread operator (...)?
+
+    ans:
+    The spread operator (...) is used to expand or copy element from an array or object.
+    It help to combine arrays,copy arrays, pass multiple values easily.
+
     - 3️⃣ What is the difference between map(), filter(), and forEach()?
+
+    ans:
+    map() :It goes through each elements of an array and returns a new array after modifying the values.
+    filter() :It creates a new array with elements that match a condition.
+    forEach():It simply loops through each element of an array but does not return a new array.
+
     - 4️⃣ What is an arrow function?
+
+    ans:
+    An arrow function is a shorter way to write functions in JavaScript.
+    It makes the code cleaner and easier to reads.
+    Arrow functions are commonly used in modern JavaScript,especially with array methods like map() and filter().
+
     - 5️⃣ What are template literals?
+
+    ans:
+    Template literals are a way to create strings using backticks ( ) instead of quotes.
+    They allow us to easily insert variables inside strings.Template literals make string writing easier, especially when combining text and variables.
+
+
 
 
 ---
@@ -100,22 +133,5 @@
 Username: admin
 Password: admin123
 ```
-
-
----
-
-### Optional: 
- - No need to show status: Open, Closed styles On modals. 
- - No Need to show icon on labels 
- - No need to apply styles on Priority 
---- 
-
-
-## 📤 What to submit
-
-- **GitHub Repository Link:**
-- **Live Site Link:**
-
----
 
 
