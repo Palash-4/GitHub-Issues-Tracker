@@ -44,17 +44,15 @@ function showIssues(issues) {
     issues.forEach(issue => {
         const card = document.createElement("div");
         card.classList.add("issue-card");
-        card.style.borderTop = issue.status === "open" ? "4px solid green" : "4px solid purple";
+        card.style.borderTop = issue.status === "open" ? "green" : "purple";
         card.innerHTML = `
-                    <div class="bg-white rounded-2xl shadow p-4 border-t-4 
-                    ${issue.status === "open" ? "border-green-400" : "border-purple-400"}"> <div class="flex justify-between items-center mb-2"> <div class="w-7 h-7 
-                    ${issue.status === "open" ? "bg-green-100 text-green-600" : "bg-purple-100 text-purple-600"} 
+                    <div class="bg-white rounded-2xl shadow p-4 border-t-4
+                    ${issue.status === "open" ? "border-green-500" : "border-purple-500"}"> <div class="flex justify-between items-center mb-2"> <div class="w-7 h-7
                     rounded-full flex items-center justify-center">
                     <img src="${issue.status === "open" ? "./assets/Open-Status.png" : "./assets/Closed- Status .png" }" alt="status icon" class="w-4 h-4">
                     </div>
                     <span class="text-xs px-3 py-1 rounded-full 
                     ${issue.priority?.toLowerCase() === "high" ? "bg-red-100 text-red-600" : "bg-gray-100 text-gray-600"}">
-
                     ${issue.priority} </span>
                     </div>
                     <h3 class="font-semibold text-gray-800 mb-2"> ${issue.title} </h3> <p class="text-sm text-gray-500 mb-3">
