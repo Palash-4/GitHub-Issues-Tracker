@@ -58,8 +58,8 @@ function showIssues(issues) {
                     <h3 class="font-semibold text-gray-800 mb-2"> ${issue.title} </h3> <p class="text-sm text-gray-500 mb-3">
                     ${issue.description.slice(0, 90)}... </p>
                     <div class="flex gap-2 mb-3">
-                    <span class="text-xs border border-red-400 text-red-500 px-2 py-1 rounded-full"> BUG </span>
-                    <span class="text-xs border border-yellow-400 text-yellow-600 px-2 py-1 rounded-full">HELP WANTED </span></div>
+                    <span class="text-xs border bg-red-200 border-red-400 text-red-500 px-2 py-1 rounded-full"> BUG </span>
+                    <span class="text-xs border bg-yellow-200 border-yellow-400 text-yellow-600 px-2 py-1 rounded-full">HELP WANTED </span></div>
                     <hr class="my-2">
                     <div class="text-xs text-gray-500 flex justify-between">
                     <span>#${issue.id} by ${issue.author}</span>
