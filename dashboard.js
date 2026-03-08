@@ -109,4 +109,27 @@ async function searchIssues() {
 }
 
 
+
+// search
+async function searchIssues() {
+    const text = document.getElementById("searchInput").value.trim();
+    if (text === "") {
+        loadIssues();
+        return;
+    }
+
+    try {
+        const res = await fetch(
+            `https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${text}`
+        );
+        const data = await res.json();
+        const issues = data.issues || data.data || [];
+        showIssues(issues);
+    } catch (error) {
+        console.error("Search failed:", error);
+
+    }
+}
+
+
 loadIssues();
